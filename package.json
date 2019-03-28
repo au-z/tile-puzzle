@@ -1,0 +1,30 @@
+{
+	"name": "tile_game",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "babel src/main.ts --extensions '.ts'",
+		"test": "jest",
+		"check-types": "tsc"
+	},
+	"author": "Austin Martin (auz.martin@gmail.com)",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/cli": "^7.2.3",
+		"@babel/core": "^7.4.0",
+		"@babel/plugin-proposal-class-properties": "^7.4.0",
+		"@babel/plugin-proposal-object-rest-spread": "^7.4.0",
+		"@babel/preset-env": "^7.4.2",
+		"@babel/preset-typescript": "^7.3.3",
+		"@babel/register": "^7.4.0",
+		"babel-jest": "^24.5.0",
+		"jest": "^24.5.0",
+		"typescript": "^3.3.4000"
+	},
+	"jest": {
+		"transform": {
+			"^.+\\.tsx?$": "babel-jest"
+		}
+	}
+}
